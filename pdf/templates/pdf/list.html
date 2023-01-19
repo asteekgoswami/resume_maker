@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .container{
+            max-width: 550px;
+            margin: auto;
+            background-color: #fff;
+            -webkit-box-shadow:2px 2px 13px -4px rgba(0,0,0,0.21);
+            box-shadow: 2px ,2px, 13px, -4px rgba(0,0,0,0.21);
+        }
+        .top{
+            background: linear-gradient(90deg, #EEA390 0%,#EB7965 43%, #EB796F 100%);
+            border-radius: 5px 5px 0 0 ;
+        }
+        .top h2{
+            color: rgb(247,247,247);
+            margin: 0;
+            padding: 45px;
+            color: rgb(247,247,247);
+            display: flex;
+            justify-content: center;
+            font-family: 'Raleway',sans-serif;
+            font-weight: 700;
+        }
+        .img{
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            margin-top: 21px;
+            margin-left: 20;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="row m-5">
+                <div class="col-md-12">
+                    <h2>Download Resume</h2>
+                </div>
+            </div>
+        </div>
+
+        {% for profile in profiles %}
+        <div class="row">
+            <div class="col-md-6">
+                {{profile.name}}
+            </div>
+            <div class="col-md-6">
+                <a href="/{{profile.id}}" class="btn btn-warning">Download CV</a>
+            </div>
+        </div>
+    <hr>
+        {% endfor %}
+    </div>
+</body>
+</html>

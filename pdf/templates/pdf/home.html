@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .top h1{
+            color: rgb(247,247,247);
+            margin: 0;
+            padding: 45px 11px;
+            color: rgb(247,247,247);
+            display: flex;
+            justify-content: center;
+            font-family: 'Raleway',sans-serif;
+            font-weight: 700;
+        }
+          .container{
+            max-width: 550px;
+            margin: auto;
+            background-color: #fff;
+            -webkit-box-shadow:2px 2px 13px -4px rgba(0,0,0,0.21);
+            box-shadow: 2px ,2px, 13px, -4px rgba(0,0,0,0.21);
+        }
+        .top{
+            background: linear-gradient(90deg, #EEA390 0%,#EB7965 43%, #EB796F 100%);
+            border-radius: 5px 5px 0 0 ;
+            display: flex;
+            
+          }
+          .img{
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            margin-top: 21px;
+            margin-left: 20;
+           
+        }
+        .img-2{
+            margin: 0;
+        }
+
+        .bbtn{
+            display: list-item;
+            padding: 21px;
+            
+        }
+        .text{
+            padding: 50px;
+            height: 100%;
+        }
+        
+        .text h1{
+            font-weight: 600;
+            font-family: 'Raleway',sans-serif;
+        }
+        .space{
+            padding: 31px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="top container">
+        <div class="nav">
+            <!-- <img class="img" src="static/images/profile.png" alt=""> -->
+            <h1>Resume Maker</h1>
+        </div>
+    </div> 
+
+    
+    
+            <!-- <div class="pos1">
+                <img class="img-2" src="static/images/cv.png" alt="">
+            
+            </div> -->
+            
+            <div class="text container">
+
+                <div class="space"></div>
+                <img class="img" src="static/images/profile.png" alt="">
+                <div class="space"></div>
+                <h1>Make Resume by just filling the form</h1>
+                <div class="space"></div>
+                <a  class="btn btn-primary bbtn" href="{%url 'accept' %}">Build</a>
+                <div class="space"></div>
+                
+                
+            </div>
+            
+                
+
+
+            
+    
+    
+</body>
+</html>

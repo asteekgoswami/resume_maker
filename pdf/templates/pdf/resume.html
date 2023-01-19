@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Name : {{user_profile.name}} </h2>
+    <br>
+    <hr>
+    <br>
+    
+    <p><h2>Contact Information :</h2> </p>
+    <ul>
+        <li>Email : {{user_profile.email}}</li>
+        <li>Phone : {{user_profile.phone}}</li>
+    </ul>
+    <br>
+    <hr>
+    <br>
+
+
+    <p><h2>Summary : </h2></p>
+    <ul>
+        <li>Highly experienced of developing and executing successful {{user_profile.previous_work}} projects. </li>
+        <li>A creative problem solver with a passion for staying current industry trends and best practices</li>
+        <li>{{user_profile.summary}}</li>
+    </ul>
+    <br>
+    <hr/>
+    <br>
+
+    <p><h2>Skills</h2></p>
+    <ul>
+        <li>Strong knowledge of {{user_profile.skills}} with ability to apply it to real-world scenarios.</li>
+        <li>Proven ability to manage multiple projects and meet deadlines in a fast-paced environment.</li>
+        <li>Proficient in {{user_profile.skills}}</li>
+    </ul>
+    
+    
+    <br>
+    <hr/>
+    <br> 
+
+    <p><h2>Education</h2></p>
+    <ul>
+        <li>Schooling : {{user_profile.school}}</li>
+        <li>Degree : {{user_profile.degree}}</li>
+        <li>College : {{user_profile.university}}</li>
+    </ul>
+    <br>
+    <hr/>
+    <br>
+    
+    <p><h2>Previous Work </h2></p>
+    <ul>
+        <li>
+            Implemented : {{user_profile.previous_work}}
+        </li>
+    </ul>
+
+</body>
+</html>
